@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name-input-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #548687, #1f4037);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.name-box {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+    animation: slideIn 0.4s ease-out;
+}
+
+.name-box h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-box input {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.8rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: 0.3s ease;
+}
+
+.name-box input:focus {
+    outline: none;
+    border-color: #548687;
+    box-shadow: 0 0 0 2px rgba(84, 134, 135, 0.3);
+}
+
+#start-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #548687;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#start-btn:hover {
+    background-color: #426a6a;
+}
+
+/* Optional slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+body{
+    background-color: #548687;
+    text-align: center;
+
+
+}
+.container{
+    height : 70vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius:1rem;
+    border: none;
+    box-shadow:0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    display: #b0413e;
+    background-color: white;
+    color: #b0413e;
+}
+
+#ResetBtn{
+    padding: 1rem;
+    font-size:1.25 rem ;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: white;
+    font-size: 8vmin;
+
+}
+.msg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.hide {
+    display: none;
+}
+
+#new-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
